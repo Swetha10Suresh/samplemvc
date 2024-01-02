@@ -3,38 +3,84 @@
     ViewBag.Title = "UserRegistration";
 }
 <style>
-    #top{
+    h2{
+        font-family:'Bradley Hand ITC';
+        font-style:italic;
+        font-weight:bold;
+        text-align:center;
+    }
+   #top1{
+       display:flex;
+       flex-direction:column;
+       justify-content:center;
+       text-align:center;
+       border:1.5px solid black;
+       background-color:lightgrey;
+       width:500px;
+       align-content:center;
+       margin:auto;
+   }
+   #registration, #t_and_c, #signin, #sign{
+       margin-top:25px;
+   }
+   #registration label{
+       width:100px;
+       text-align:right;
+       margin-right:10px;
+       font-family:'Times New Roman', Times, serif;
+       line-height:25px;
+       margin-bottom:5px;
+       margin-left:0;
+   }
+   #registration input{
+       width:200px;
+       line-height:25px;
+   }
+    /*#sign {
+        display: flex;
+        flex-direction: row;
+    }*/
+    #t_and_c{
         display:flex;
-        flex-direction:row;
         justify-content:center;
-        font-size:15px;
+        align-items:center;
     }
-    #sign{
+    #t_and_c input{
+        margin-right:5px;
+    }
+    /*#sign{
         display:flex;
-        flex-direction:row;
+        justify-content:center;
     }
+    .signin{
+        width:100px;
+        height:25px;
+        justify-content:center;
+        text-align:center;
+    }*/
 </style>
-<div id="top">
-    <img src="/assets/registration.jpg" alt="img1" width="300px" height="350px" />
-    <div id="top1">
-        <div id="registration">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" /><br />
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="mail" /><br />
-            <label for="User">UserName:</label>
-            <input type="text" name="username" id="User" /><br />
-            <label for="pass">PassWord</label>
-            <input type="password" name="pass" id="pass" /><br />
-            <label id="pass1">Retype Password</label>
-            <input type="password" name="pass1" id="pass1" /><br />
-            <input type="checkbox" /><p>I agree to the terms and conditions</p>
-        </div>
-        <button type="button">Sign Up</button>
+<h2>New User Registration</h2>
+<div id="top1">
+    <div id="registration">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" /><br />
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="mail" /><br />
+        <label for="User">UserName</label>
+        <input type="text" name="username" id="User" /><br />
+        <label for="pass">PassWord</label>
+        <input type="password" name="pass" id="pass" /><br />
+        <label id="pass1">Retype Password</label>
+        <input type="password" name="pass1" id="pass1" /><br />
+    </div>
+    <div id="t_and_c">
+            <input type="checkbox" />
+            <p>I agree to the terms and conditions</p>
+    </div> 
+    <div id="signin">
+       <button type="button" class="signin">Sign Up</button>
         <div id="sign">
-            <p>Already a User?</p>
-            <p><a>Log In</a></p>
+           <p>Already a User?<a href="#">Log In</a></p>
         </div>
     </div>
 </div>
-
