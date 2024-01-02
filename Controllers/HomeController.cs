@@ -10,18 +10,28 @@ namespace MVC_Demo.Controllers
     {
         public ActionResult Index()
         {
-            ViewData["fruitlist"] = new List<string>()
+            ViewData["topbooklist"] = new List<string>()
             {
-                "Apple",
-                "Orange",
-                "Mango"
+                "Harry Potter and the chamber of the secrets",
+                "The Alchemist",
+                "The Lord of the rings"
             };
+            return View();
+        }
+        public ActionResult UserRegistration()
+        {
             return View();
         }
 
         public ActionResult BookEntry()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult BookDataEntry(string title, string genre, string price)
+        {
+            
         }
     }
 }

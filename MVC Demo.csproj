@@ -132,11 +132,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\book.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\EmployeeContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\registration.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -172,6 +174,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Employee\Details.cshtml" />
     <Content Include="Views\Home\BookEntry.cshtml" />
+    <Content Include="Views\Home\UserRegistration.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

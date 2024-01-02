@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "UserRegistration";
+}
+<style>
+    #top{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        font-size:15px;
+    }
+    #sign{
+        display:flex;
+        flex-direction:row;
+    }
+</style>
+<div id="top">
+    <img src="/assets/registration.jpg" alt="img1" width="300px" height="350px" />
+    <div id="top1">
+        <div id="registration">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" /><br />
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="mail" /><br />
+            <label for="User">UserName:</label>
+            <input type="text" name="username" id="User" /><br />
+            <label for="pass">PassWord</label>
+            <input type="password" name="pass" id="pass" /><br />
+            <label id="pass1">Retype Password</label>
+            <input type="password" name="pass1" id="pass1" /><br />
+            <input type="checkbox" /><p>I agree to the terms and conditions</p>
+        </div>
+        <button type="button">Sign Up</button>
+        <div id="sign">
+            <p>Already a User?</p>
+            <p><a>Log In</a></p>
+        </div>
+    </div>
+</div>
+

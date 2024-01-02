@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Fruits";
+    ViewBag.Title = "TopBooks";
 }
 <style>
     li{
@@ -8,9 +8,9 @@
     }
 </style>
 
-<h2>Fruit List</h2>
-@foreach (string strfruit in (List<string>)ViewData["Fruitlist"])
+<h2>Top Selling Books Of The Month</h2>
+@foreach (string strbook in (List<string>)ViewData["topbooklist"])
             {
-    <li>@strfruit</li>
+    <li>@strbook</li>
             }
 
