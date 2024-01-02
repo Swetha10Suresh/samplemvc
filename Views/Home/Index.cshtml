@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Fruits";
+}
+<style>
+    li{
+        color:black;
+    }
+</style>
+
+<h2>Fruit List</h2>
+@foreach (string strfruit in (List<string>)ViewData["Fruitlist"])
+            {
+    <li>@strfruit</li>
+            }
+

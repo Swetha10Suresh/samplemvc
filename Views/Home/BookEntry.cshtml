@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "BookEntry";
+}
+<style>
+    #form1 {
+        padding: 10%;
+        background-color: lightgrey;
+        color: black;
+    }
+
+    #stat {
+        font-size: 10px;
+        font-family: Poppins;
+        color: darkred;
+    }
+
+    #price2 {
+        display: flex;
+        align-items: center;
+    }
+
+    #price,
+    #value,
+    #priceValue {
+        display: inline-block;
+        margin: 5px;
+    }
+</style>
+
+<h1>HEYYY!!! Welcome to Blossom Used Book Sale!!!</h1>
+<h2>You Enter Your Book Details Here!!!</h2>
+
+
+    <label for="title">Book Title:</label>
+    <input id="title" type="text" name="booktitle" /><br />
+    <label for="genre">Genre:</label>
+    <input id="genre" type="text" name="genre" multiple /><br />
+    <div id="priceAll">
+        <div id="price1">
+            <label for="price">Price you intend to sell:</label>
+            <p id="stat">PS:15% of the price you enter will be taken as the platform fee</p>
+        </div>
+        <div id="price2">
+            <input type="text" id="priceValue" value="" />
+            <input id="price" type="range" name="price" min="100" max="5000" step="1" />
+            <p>Price: <output id="value"></output></p>
+
+        </div>
+    </div>
+    <button>Submit</button>
+
+
+
+<script>
+    const value = document.querySelector("#value");
+    const input = document.querySelector("#price");
+    value.textContent = input.value;
+    input.addEventListener("input", (event) => {
+        value.textContent = event.target.value;
+    });
+
+    const scale = document.querySelector("#priceValue");
+    const changeprice = document.querySelector("#value");
+
+    scale.addEventListener("change", (event) => {
+        changeprice.textContent = event.target.value;
+
+    })
+ 
+        var textInput = document.getElementById('priceValue');
+        var rangeInput = document.getElementById('price');
+        textInput.addEventListener(input, function () {
+            var textValue = this.value;
+            rangeInput.value = textValue;
+            console.log("value",textValue);
+        })
+  
+
+  
+    
+</script>
+
