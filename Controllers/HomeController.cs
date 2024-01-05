@@ -28,10 +28,10 @@ namespace MVC_Demo.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult BookDataEntry(string title, string genre, string price)
-        {
+        //[HttpPost]
+        //public ActionResult BookDataEntry(string title, string genre, string price)
+        //{
             
-        }
+        //}
     }
 }
